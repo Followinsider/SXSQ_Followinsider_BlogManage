@@ -1,96 +1,95 @@
 <template>
-  <div>
-    <div class="container" ref="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form class="sign-in-form">
-            <div class="logo_container">
-              <img src="../assets/logo.png" alt="" />
-              <h2 class="title">博客管理平台</h2>
-            </div>
-            <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="用户名" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="密码" />
-            </div>
-            <input type="submit" value="登录" class="btn_login solid" />
-            <p class="social-text">微信快速登录</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <img src="../icons/svg/wechat.svg" alt="" class="icons_self" />
-              </a>
-            </div>
-            <!-- <p class="forget_password" @click="forget">忘记密码</p> -->
-            <el-button type="text" @click="forget" class="forget_password"
-              >忘记密码</el-button
-            >
-          </form>
-          <form class="sign-up-form">
-            <div class="logo_container">
-              <img src="../assets/logo.png" alt="" />
-              <h2 class="title">博客管理平台</h2>
-            </div>
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <input type="submit" class="btn_register" value="注册" />
-          </form>
-        </div>
-      </div>
+	<div>
+		<div class="container" ref="container">
+			<div class="forms-container">
+				<div class="signin-signup">
+					<form class="sign-in-form">
+						<div class="logo_container">
+						<img src="../assets/logo.png" alt="" />
+						<h2 class="title">博客管理平台</h2>
+						</div>
+						<h2 class="title">Sign in</h2>
+						<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="用户名" />
+						</div>
+						<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="密码" />
+						</div>
+						<input type="submit" value="登录" class="btn_login solid" />
+						<p class="social-text">微信快速登录</p>
+						<div class="social-media">
+						<a href="#" class="social-icon">
+							<img src="../icons/svg/wechat.svg" alt="" class="icons_self" />
+						</a>
+						</div>
+						<el-button type="text" @click="forget" class="forget_password"
+						>忘记密码</el-button
+						>
+					</form>
+					<form class="sign-up-form">
+						<div class="logo_container">
+						<img src="../assets/logo.png" alt="" />
+						<h2 class="title">博客管理平台</h2>
+						</div>
+						<h2 class="title">Sign up</h2>
+						<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Username" />
+						</div>
+						<div class="input-field">
+						<i class="fas fa-envelope"></i>
+						<input type="email" placeholder="Email" />
+						</div>
+						<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" placeholder="Password" />
+						</div>
+						<input type="submit" class="btn_register" value="注册" />
+					</form>
+				</div>
+			</div>
 
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>是否初此接触~</h3>
-            <p>输入您的相关信息并与我们一起开始您的旅程</p>
-            <button class="btn_login transparent" @click="signUp()">
-              去注册
-            </button>
-          </div>
-          <div class="content">
-            <img
-              src="../icons/svg/login_SXSQ.svg"
-              class="image image_login"
-              alt=""
-            />
-            <img
-              src="../icons/svg/login_FollowInsider.svg"
-              class="image image_login"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>一起做点有趣的东西吧</h3>
-            <p>【请尽量不使用您的重要信息进行登录】</p>
-            <button class="btn_register transparent" @click="signIn()">
-              去登录
-            </button>
-          </div>
-          <img
-            src="../icons/svg/register.svg"
-            class="image image_register"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-  </div>
+			<div class="panels-container">
+				<div class="panel left-panel">
+				<div class="content">
+					<h3>是否初此接触~</h3>
+					<p>输入您的相关信息并与我们一起开始您的旅程</p>
+					<button class="btn_login transparent" @click="signUp">
+					去注册
+					</button>
+				</div>
+				<div class="content">
+					<img
+					src="../icons/svg/login_SXSQ.svg"
+					class="image image_login"
+					alt=""
+					/>
+					<img
+					src="../icons/svg/login_FollowInsider.svg"
+					class="image image_login"
+					alt=""
+					/>
+				</div>
+				</div>
+				<div class="panel right-panel">
+				<div class="content">
+					<h3>一起做点有趣的东西吧</h3>
+					<p>【请尽量不使用您的重要信息进行登录】</p>
+					<button class="btn_register transparent" @click="signIn">
+					去登录
+					</button>
+				</div>
+				<img
+					src="../icons/svg/register.svg"
+					class="image image_register"
+					alt=""
+				/>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -132,7 +131,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("../styles/fonts_googleadpis.css");
 
 body,
